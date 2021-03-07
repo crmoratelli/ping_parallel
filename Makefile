@@ -3,4 +3,4 @@ SRC=$(wildcard *.c)
 LIBS=-lpthread
 
 all: $(SRC)
-	gcc -g -o ping $^ $(CFLAGS) $(LIBS)
+	gcc -g -o ping_parallel $^ $(CFLAGS) $(LIBS)
