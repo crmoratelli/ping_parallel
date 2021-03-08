@@ -131,6 +131,8 @@ void * checkHost(void *p){
                     if (sendto(fd, &req, req_size, 0, (struct sockaddr *)&sin, sizeof(sin))==-1) {
                         perror("sendto");
                     }
+
+                    gettimeofday(&ipdt->timestamp, NULL);
                 }
             }
         }
